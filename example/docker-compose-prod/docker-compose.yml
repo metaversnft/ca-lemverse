@@ -30,10 +30,10 @@ services:
                 {
                     "public": {
                         "lp": {
-                            "website": "https://app.lemverse.com",
-                            "product": "lemverse",
+                            "website": "https://world.joincodingnow.com",
+                            "product": "Join Coding Now",
                             "process": "main",
-                            "gods": [""],
+                            "gods": ["usr_XbAWZZmRjL6RxuAua", "usr_BcqLo7nRbNoH7sp4y"],
                             "production": true,
                             "staging": false,
                             "enableLogClient": false
@@ -49,8 +49,8 @@ services:
                             "delayBeforeClosingCall": 1000
                         },
                         "meet": {
-                            "serverURL": "jitsi.YOURDOMAIN.COM",
-                            "roomDefaultName": "lemverse-test"
+                            "serverURL": "jitsi.joincodingnow.com",
+                            "roomDefaultName": "joincodingnow"
                         },
                         "character": {
                             "walkSpeed": 180,
@@ -157,12 +157,12 @@ services:
                     },
                     "defaultLevelId": "lvl_iLOVEaLOTlemverse",
                     "email": {
-                        "from": "The lembot <contact@m.lemverse.com>"
+                        "from": "Harry <support@joincodingnow..com>"
                     },
                     "peer": {
                         "path": "/peer",
                         "client": {
-                            "url": "peer.YOURDOMAIN.COM",
+                            "url": "peer.joincodingnow.com",
                             "port": 443,
                             "credentialDuration": 86400,
                             "secret": "",
@@ -196,9 +196,9 @@ services:
         restart: unless-stopped
         container_name: caddy
         environment:
-            FRONTEND_HOST: app.YOURDOMAIN.COM
-            JITSI_HOST: jitsi.YOURDOMAIN.COM
-            PEER_HOST: peer.YOURDOMAIN.COM
+            FRONTEND_HOST: world.joincodingnow.com
+            JITSI_HOST: jitsi.joincodingnow.com
+            PEER_HOST: peer.joincodingnow.com
             JITSI_SERVICE: jitsi
             FRONTEND_SERVICE: lemverse
             PEER_SERVICE: peer
